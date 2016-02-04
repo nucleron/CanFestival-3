@@ -1,97 +1,102 @@
-.project
+# Compiled Object files #
+#########################
+*.slo
+*.lo
+*.o
+*.obj
 
-syntax: regexp
-^objdictgen/gnosis$
-syntax: regexp
-\.o$
-syntax: regexp
-\.so$
-syntax: regexp
-\.pyc$
-syntax: regexp
-\.a$
-syntax: regexp
-\.orig$
-syntax: regexp
-^\.settings.*
-syntax: regexp
-\.rej$
-syntax: regexp
-^drivers/can_socket/Makefile$
-syntax: regexp
-^drivers/timers_unix/Makefile$
-syntax: regexp
-^drivers/unix/Makefile$
-syntax: regexp
-^drivers/Makefile$
-syntax: regexp
-^drivers/can_peak_linux/Makefile$
-syntax: regexp
-^drivers/timers_rtai/Makefile$
+# Precompiled Headers #
+#######################
+*.gch
+*.pch
+
+# Compiled Dynamic libraries #
+##############################
+*.so
+*.dylib
+*.dll
+
+# Fortran module files #
+########################
+*.mod
+
+# Compiled Static libraries #
+#############################
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables #
+###############
+*.exe
+*.out
+*.app
+
+# Something else #
+##################
+*.py[ocd]
+*.rej
+
+# Backup files #
+################
+*~
+*.orig
+
+# Directory files #
+###################
+*directory
+
+# Docs #
+########
+doc/doxygen/html/**
+
+# Specific files #
+##################
+examples/CANOpenShell/CANOpenShell
+examples/CANOpenShell/Debug
+examples/DS401_Master/DS401_Master
+examples/DS401_Slave_Gui/DS401_Slave_Gui
+examples/TestMasterMicroMod/TestMasterMicroMod
+examples/TestMasterSlave/TestMasterSlave
+objdictgen/gnosis
+
+# Makefiles #
+#############
+Makefile
+drivers/Makefile
+examples/**/Makefile
+objdictgen/Makefile
+src/Makefile
+
+drivers/can_socket/Makefile
+drivers/timers_unix/Makefile
+drivers/unix/Makefiles
+drivers/can_peak_linux/Makefile
+drivers/timers_rtai/Makefile
+
+examples/CANOpenShell/Makefile
+examples/SillySlave/Makefile
+examples/TestMasterMicroMod/Makefile
+examples/TestMasterSlave/Makefile
+examples/TestMasterSlaveLSS/Makefile
+
+# Generated sources #
+#####################
+include/config.h
+objdictgen/canfestival_config.py
+examples/CANOpenShell/CANOpenShellMasterOD.c
+examples/CANOpenShell/CANOpenShellMasterOD.h
+examples/CANOpenShell/CANOpenShellSlaveOD.c
+examples/CANOpenShell/CANOpenShellSlaveOD.h
+examples/DS401_Master/TestMaster.c
+examples/DS401_Master/TestMaster.h
+examples/DS401_Slave_Gui/ObjDict.c
+examples/DS401_Slave_Gui/ObjDict.h
+examples/TestMasterSlave/TestMaster.c
+examples/TestMasterSlave/TestMaster.h
+examples/TestMasterSlave/TestSlave.c
+examples/TestMasterSlave/TestSlave.h
+examples/TestMasterMicroMod/TestMaster.c
 
 
-syntax: regexp
-^examples/CANOpenShell/Debug$
-syntax: regexp
-^examples/CANOpenShell/CANOpenShellMasterOD\.c$
-syntax: regexp
-^examples/CANOpenShell/CANOpenShellMasterOD\.h$
-syntax: regexp
-^examples/CANOpenShell/CANOpenShellSlaveOD\.c$
-syntax: regexp
-^examples/CANOpenShell/CANOpenShellSlaveOD\.h$
-syntax: regexp
-^examples/CANOpenShell/Makefile$
-
-syntax: regexp
-^examples/SillySlave/Makefile$
-syntax: regexp
-^examples/TestMasterMicroMod/Makefile$
-syntax: regexp
-^examples/TestMasterSlave/Makefile$
-syntax: regexp
-^examples/TestMasterSlaveLSS/Makefile$
-syntax: regexp
-^examples/Makefile$
-syntax: regexp
-^drivers/Makefile$
-syntax: regexp
-^Makefile$
-syntax: regexp
-^objdictgen/canfestival_config\.py$
-syntax: regexp
-^objdictgen/Makefile$
-syntax: regexp
-^examples/Makefile$
-syntax: regexp
-^src/Makefile$
-
-syntax: regexp
-^examples/.*/Makefile$
-
-syntax: regexp
-^examples/CANOpenShell/CANOpenShell$
-^examples/DS401_Master/DS401_Master$
-^examples/DS401_Slave_Gui/DS401_Slave_Gui$
-
-
-
-syntax: regexp
-^include/config\.h$
-syntax: regexp
-^examples/TestMasterMicroMod/TestMasterMicroMod$
-syntax: regexp
-^examples/TestMasterSlave/TestMasterSlave$
-
-syntax: regexp
-^doc/doxygen/html$
-
-glob:examples/DS401_Master/TestMaster.c
-glob:examples/DS401_Master/TestMaster.h
-glob:examples/DS401_Slave_Gui/ObjDict.c
-glob:examples/DS401_Slave_Gui/ObjDict.h
-glob:examples/TestMasterSlave/TestMaster.c
-glob:examples/TestMasterSlave/TestMaster.h
-glob:examples/TestMasterSlave/TestSlave.c
-glob:examples/TestMasterSlave/TestSlave.h
-glob:examples/TestMasterMicroMod/TestMaster.c
